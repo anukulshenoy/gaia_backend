@@ -1,0 +1,26 @@
+{
+  "name": "gaia_backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha",
+    "start": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://anukulshenoy@github.com/anukulshenoy/gaia_backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anukulshenoy/gaia_backend/issues"
+  },
+  "homepage": "https://github.com/anukulshenoy/gaia_backend#readme",
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0",
+    "request": "^2.81.0"
+  }
+}

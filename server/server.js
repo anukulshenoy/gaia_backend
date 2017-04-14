@@ -12,6 +12,7 @@ var options = {
         'Accept': 'application/json'
     }
 };
+//calculate the max preview duration from the videos array
 var maxDuration = function(array){
     var max, previewNid, titleNid;
     for (var i = 0; i < array.length; i++) {
@@ -30,7 +31,7 @@ var maxDuration = function(array){
     return {"max" : max, "previewNid": previewNid, "titleNid": titleNid};
 }
 
-app.get('/', function (req, res) {
+app.get('/terms/26681/longest-preview-media-url', function (req, res) {
     request(options).then(function(data){
         tid = JSON.parse(data.body).terms[0].tid;
         options.url = 'http://d6api.gaia.com/videos/term/' + tid;
