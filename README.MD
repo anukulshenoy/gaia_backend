@@ -7,7 +7,7 @@ npm install
 Inside the projects root folder:
 
 cd server
-nodemon server.js
+node server.js
 
 in the browser navigate to http://localhost:3000/terms/26681/longest-preview-media-url
 

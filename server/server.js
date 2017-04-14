@@ -44,9 +44,16 @@ app.get('/terms/26681/longest-preview-media-url', function (req, res) {
             request(options).then(function(data){
                 longestPreviewMedia.bcHLS = JSON.parse(data.body).mediaUrls.bcHLS;
                 res.send(JSON.stringify(longestPreviewMedia));
+            }, function(error){
+                console.log(error);
             })
+        }, function (error){
+            console.log(error);
         })
 
+    }, function (error){
+        console.log(error);
+        res.send("Error");
     });
 });
 
